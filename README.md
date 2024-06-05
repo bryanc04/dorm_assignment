@@ -50,11 +50,18 @@ The software currently only supports `.csv` file where columns are:
 |One Student6|Full name of one of the 8 other students a given student requested to be in a dorm with|
 |One Student7|Full name of one of the 8 other students a given student requested to be in a dorm with|
 |One Student8|Full name of one of the 8 other students a given student requested to be in a dorm with|
+|Gender|Gender that student identifies with most (Male/Female/Non-Binary/Self-Identifying)|
+
 * These columns are strictly required, and the algorithm does not function if any of these columns are incorrectly formatted or nonexistent.
 * Other columns may be present, but does not impact the algorithm at all.
 
 # Using the Software
-Properly uploading the file will redirect to a page with initialized Dorm configurations.      Student names can be dragged into other dorms.  
+Properly uploading the file will redirect to a page with initialized Dorm configurations.      Student names can be dragged into other dorms.  Once changes are made, the configuration can be downloaded into a file format through the download icon on the bottom left. 
+
+# Warnings
+* The Matched Roommate does not imply that the two students should be placed in a double--it only indicates that they mutually put each other as their "matched roommates" in the survey
+* The algorithm currently often places too many students in a dorm (so some dorms exceed capacity). Make sure to double-check.
+* For students identifying neither with Male nor Female, they may indicate so in the survey (and may be part of the input .csv). However, they will show up in both "Male" and "Female" sections of the interface, and they may be placed in different dorms under each category. The "optimal" configuration for these students will be shown in the "All" category. 
 
 
 
